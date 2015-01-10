@@ -80,10 +80,17 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\WinPhoneTwt.BusinessLogic\WinPhoneTwt.BusinessLogic.csproj">
+      <Project>{903C9054-FD30-4817-B95A-33B354B1D2F0}</Project>
+      <Name>WinPhoneTwt.BusinessLogic</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_LoginPage.xaml.cs">
+      <DependentUpon>Page_LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Page_MainPage.xaml.cs">
       <DependentUpon>Page_MainPage.xaml</DependentUpon>
@@ -110,6 +117,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\Page_LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Page_MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

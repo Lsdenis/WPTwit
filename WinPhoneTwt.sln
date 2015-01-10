@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30324.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPhoneTwt.BusinessLogic", "WinPhoneTwt.BusinessLogic\WinPhoneTwt.BusinessLogic.csproj", "{903C9054-FD30-4817-B95A-33B354B1D2F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPhoneTwt.Presentation", "WinPhoneTwt.Presentation\WinPhoneTwt.Presentation.csproj", "{31B19265-492F-403A-B8DA-BD25DAD26B13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{903C9054-FD30-4817-B95A-33B354B1D2F0} = {903C9054-FD30-4817-B95A-33B354B1D2F0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
